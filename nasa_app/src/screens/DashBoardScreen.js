@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { DateCell } from '../components/DateCell';
 
 export const DashBoardScreen = () => {
 
@@ -16,7 +16,7 @@ export const DashBoardScreen = () => {
             <h1>Dashboard</h1>
             <div className="grid-container">
                 {result.map((res, i) => (
-                    <div className='grid-cell' key={i}><Link to="/detail">{res}</Link></div>
+                    <DateCell key={i} date={res}/>
                 ))}
             </div>
         </>

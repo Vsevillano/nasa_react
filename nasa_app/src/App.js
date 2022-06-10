@@ -11,7 +11,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<DashBoardScreen />} exact />
-          <Route path="/detail" element={<DetailScreen />} exact />        
+          <Route path="/detail/:date" element={<DetailScreen />} />        
         </Routes>
       </BrowserRouter>
     </>
