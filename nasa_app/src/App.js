@@ -8,13 +8,16 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<DashBoardScreen />} exact />
-          <Route path="/detail/:date" element={<DetailScreen />} />        
-        </Routes>
-      </BrowserRouter>
+      <div className='container-fluid px-0'>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<DashBoardScreen />} exact />
+            <Route path="/detail/:date" element={<DetailScreen />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
     </>
+
   );
 
 }
