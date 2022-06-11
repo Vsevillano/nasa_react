@@ -26,3 +26,8 @@ La página de detalle tendrá un botón volver para regresar al dashboard.
 • Principios clean clode, modularizar código, encapsulamiento de lógica y componentes.
 • Cuidado de estilos CSS, se permite el uso de librerías auxiliares y preprocesadores de CSS.
 • No es necesario hacer la aplicación Responsive, aunque es un plus.
+
+## NOTA sobre el parámetro API_KEY
+Los datos se obtienen de APIs abiertas propiedad de la NASA. El parámetro API_KEY=DEMO_KEY tiene ciertas limitaciones que pueden ser consultadas en la siguiente web
+
+https://api.nasa.gov/

@@ -12,8 +12,6 @@ export const DashBoardScreen = () => {
     const postsList = useSelector((state) => state.postsList);
     const { loading, error, posts } = postsList;
 
-
-
     useEffect(() => {
         dispatch(listPosts());
     }, [dispatch])
