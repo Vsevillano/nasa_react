@@ -13,7 +13,7 @@ function App() {
           <nav className="navbar navbar-dark bg-dark mb-3">
             <div className="container-fluid">
               <Link className="navbar-brand" to="/">
-                NASA app
+                NASA App
               </Link>
             </div>
           </nav>
@@ -25,30 +25,30 @@ function App() {
         <footer className="bg-dark text-center text-white mt-5">
           <div className="container p-4">
             <section className="mb-4">
-              <Link className="btn btn-outline-light btn-floating m-1" to="https://www.facebook.com/Vsevillano1991/" target="_blank" role="button">
+              <a className="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/Vsevillano1991/" target="_blank" rel="noreferrer noopener" role="button">
                 <i className="fab fa-facebook-f"></i>
-              </Link>
+              </a>
 
-              <Link className="btn btn-outline-light btn-floating m-1" to="https://twitter.com/Vsevillanoo" target="_blank" role="button">
+              <a className="btn btn-outline-light btn-floating m-1" href="https://twitter.com/Vsevillanoo" target="_blank" rel="noreferrer noopener" role="button">
                 <i className="fab fa-twitter"></i>
-              </Link>
+              </a>
 
-              <Link className="btn btn-outline-light btn-floating m-1" to="https://www.instagram.com/vsevillano91/" target="_blank" role="button">
+              <a className="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/vsevillano91/" target="_blank" rel="noreferrer noopener" role="button">
                 <i className="fab fa-instagram"></i>
-              </Link>
+              </a>
 
-              <Link className="btn btn-outline-light btn-floating m-1" to="https://www.linkedin.com/in/victoriano-sevillano-vega/" target="_blank" role="button">
+              <a className="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/victoriano-sevillano-vega/" target="_blank" rel="noreferrer noopener" role="button">
                 <i className="fab fa-linkedin-in"></i>
-              </Link>
+              </a>
 
-              <Link className="btn btn-outline-light btn-floating m-1" to="https://github.com/Vsevillano" target="_blank" role="button">
+              <a className="btn btn-outline-light btn-floating m-1" href="https://github.com/Vsevillano" target="_blank" rel="noreferrer noopener" role="button">
                 <i className="fab fa-github"></i>
-              </Link>
+              </a>
             </section>
           </div>
 
           <div className="text-center p-3" style={{ backgroundColor: `#000000` }}>
-            Diseña y desarrolla: <Link className="text-white" to="/">Victoriano Sevillano Vega</Link>
+            Diseña y desarrolla: <a className="text-white" href="/">Victoriano Sevillano Vega</a>
           </div>
         </footer>
       </BrowserRouter>
