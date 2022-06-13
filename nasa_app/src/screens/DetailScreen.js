@@ -39,10 +39,10 @@ export const DetailScreen = () => {
                         post && (
                             <>
                                 <div className='row'>
-                                    <div className='col-6'>
+                                    <div className='col-12 col-md-6'>
                                         <img className="img-fluid" src={post.url} alt={post.title} />
                                     </div>
-                                    <div className='col-6'>
+                                    <div className='col-12 col-md-6 py-3 pt-md-0'>
                                         <h4>{post.title}</h4>
                                         <p>{post.explanation}</p>
                                         <Link to="/" className="btn btn-primary">Volver</Link>
