@@ -13,7 +13,8 @@ export const listPosts = () => async (dispatch) => {
         for (var i = 0; i < 6; i++) {
             var d = new Date();
             d.setDate(d.getDate() - i);
-            const { data } = await Axios.get(`https://api.nasa.gov/planetary/apod?api_key=zdUP8ElJv1cehFM0rsZVSQN7uBVxlDnu4diHlLSb&date=${d.toISOString().split('T')[0]}`);
+            console.log(process.env.API_KEY)
+            const { data } = await Axios.get(`https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_API_KEY}&date=${d.toISOString().split('T')[0]}`);
             if (data)
                 result.push(data)
         }
@@ -32,7 +33,7 @@ export const listPosts = () => async (dispatch) => {
 export const getPost = (date) => async (dispatch) => {
     dispatch({ type: NASA_POST_REQUEST });
     try {
-        const { data } = await Axios.get(`https://api.nasa.gov/planetary/apod?api_key=zdUP8ElJv1cehFM0rsZVSQN7uBVxlDnu4diHlLSb&date=${date}`);
+        const { data } = await Axios.get(`https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_API_KEY}&date=${date}`);
         dispatch({ type: NASA_POST_SUCCESS, payload: data });
     } catch (error) {
         dispatch({ type: NASA_POST_FAIL, payload: error.message });
