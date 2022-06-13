@@ -5,6 +5,7 @@ import { listPosts } from '../actions/nasaActions';
 import { LoadingBox } from '../components/LoadingBox';
 import { AlertMessage } from '../components/AlertMessage';
 import { ToolBar } from '../components/ToolBar';
+import { Link } from 'react-router-dom';
 
 export const DashBoardScreen = () => {
 
@@ -33,7 +34,9 @@ export const DashBoardScreen = () => {
                         ) : (
                             posts.map((post, i) => (
                                 <div className="col-12 col-md-4 px-md-2 py-3" key={i}>
-                                    <DateCell key={i} date={post.date} image={post.url} title={post.title} />
+                                <Link to={`/detail/${post.date}`} className="text-decoration-none text-reset" >
+                                    <DateCell date={post.date} image={post.url} title={post.title} />
+                                </Link>
                                 </div>
                             ))
                         )
